@@ -43,10 +43,12 @@
 
 @media screen and (max-width: 600px) {
   .header {
-    width: 350px;
+    width: 365px;
     top: 20px;
     right: 50px;
     left: 50px;
+    z-index: 500;
+    position: fixed;
   }
   .links {
     display: none;
