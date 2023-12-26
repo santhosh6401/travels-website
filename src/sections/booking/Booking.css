@@ -1,0 +1,39 @@
+.booking-topic {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.booking-form {
+  padding: 75px 25px 75px 25px;
+  font-size: 13px;
+  background-color: rgba(24, 24, 24, 0.03);
+  border-radius: 5px;
+  box-shadow: 6px 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form-button {
+  width: 150px;
+  text-align: center;
+}
+
+.booking-text {
+  font-size: 12px;
+}
+
+.booking-image {
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  .booking-form {
+    padding: 25px;
+  }
+  .booking-image {
+    margin-top: 50px;
+  }
+  .booking-topic {
+    font-size: 20px;
+  }
+}

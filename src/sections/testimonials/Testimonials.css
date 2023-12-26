@@ -1,0 +1,35 @@
+.feedback-carousel {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+
+.feedback-card {
+  width: 300px;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #4f82e05e;
+  border-radius: 15px;
+}
+
+.testimonials-topic {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+.feedback-desc {
+  padding-top: 30px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 600px) {
+  .feedback-carousel {
+    margin-left: 110px;
+  }
+
+  .testimonials-topic {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+}

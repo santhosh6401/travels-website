@@ -1,0 +1,90 @@
+/* GOOGLE FONTS */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/* VARIABLE CSS */
+
+:root {
+  --header-height: 3rem;
+
+  /* COLOR */
+
+  --hue: 0;
+  --sat: 0%;
+  --title-color: hsl(var(--hue), var(var(--sat), 20%));
+  --title-color-dark: hsl(var(--hue), var(var(--sat), 0%));
+  --text-color: hsl(var(--hue), var(var(--sat), 46%));
+  --body-color: hsl(var(--hue), var(var(--sat), 98%));
+  --container-color: #fff;
+  --body-font: "Poppins", sans-serif;
+  --font-size: 0.9rem;
+  --color-grey: rgb(32, 32, 32);
+  --color-secondary: #5f5f5fbb;
+  --color-description: #1852da98;
+  --color-white: #ffffff;
+  --color-blue: #407BFF;
+
+  /* TRANSITION */
+
+  --transition: all 500ms ease;
+
+  /* BORDER-RADIUS */
+
+  --border-1: 1.2rem;
+  --border-2: 0.8rem;
+  --border-3: 0.5rem;
+
+  /* CONTAINER BASICS  */
+  --container-lg: 75%;
+  --contanier-ms: 90%;
+}
+
+/* BASE */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body,
+input,
+textarea {
+  font-family: var(--body-font);
+  font-size: var(--font-size);
+  line-height: 1.6;
+  color: var(--color-grey);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* GENERAL SECTION */
+
+section {
+  transition: var(--transition);
+}
+
+section:nth-child(even) {
+  background: var(--color-secondary);
+}
+

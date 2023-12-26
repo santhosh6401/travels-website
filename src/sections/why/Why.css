@@ -1,0 +1,48 @@
+.why {
+  margin-top: 100px;
+}
+
+.why-image {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  padding: 30px;
+}
+
+.why-topic {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 100px;
+}
+
+.why-card-right {
+  margin-left: 50px;
+  margin: auto;
+  color: var(--color-blue);
+}
+
+.why-card-left {
+  margin: auto;
+  color: var(--color-blue);
+}
+
+.why-icon {
+  color: var(--color-blue);
+  margin: 5px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .why-card-right , .why-card-left{
+    margin-left: 150px;
+  }
+  .why-icon {
+    font-size: 30px;
+    margin: 7px;
+  }
+
+  .why-topic {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 100px;
+  }
+}

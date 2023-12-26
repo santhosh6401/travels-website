@@ -1,0 +1,46 @@
+.vehicle {
+  height: 650px;
+  color: var(--color-grey);
+  text-align: center;
+  position: relative;
+}
+
+.vehicle-image {
+  width: 575px;
+  height: 350px;
+  margin-bottom: 100px;
+}
+
+.vehicle-caption {
+  font-size: 20px;
+  color: var(--color-grey);
+}
+
+.vehicle-desc {
+  font-weight: 400;
+  color: var(--color-secondary);
+}
+
+.add-desc {
+  margin: 50px;
+}
+
+.vehicle-topic {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 100px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .vehicle-image {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 100px;
+  }
+
+  .vehicle-topic {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+}

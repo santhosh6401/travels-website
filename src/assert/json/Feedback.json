@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "name": "John Doe",
+      "comment": "Great service! Will definitely use again.",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "comment": "Excellent experience. Highly recommended.",
+      "rating": 4.5
+    },
+    {
+        "id": 3,
+        "name": "John Doe",
+        "comment": "Great service! Will definitely use again.",
+        "rating": 5
+      },
+      {
+        "id": 4,
+        "name": "Jane Smith",
+        "comment": "Excellent experience. Highly recommended.",
+        "rating": 4.5
+      }
+]
+  
