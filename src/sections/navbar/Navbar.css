@@ -42,6 +42,11 @@
 }
 
 @media screen and (max-width: 600px) {
+  .header {
+    top: 20px;
+    right: 50px;
+    left: 50px;
+  }
   .links {
     display: none;
   }

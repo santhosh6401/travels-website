@@ -1,3 +1,8 @@
 .background {
-background-color: rgba(124, 161, 253, 0.044);
+  background-color: rgba(124, 161, 253, 0.044);
+}
+@media screen and (max-width: 600px) {
+  .background {
+    background-color: rgb(255, 255, 255);
+  }
 }
