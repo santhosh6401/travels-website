@@ -75,14 +75,12 @@ iframe {
   }
 
   .contact-info {
-    margin-left: 10px;
+    margin-left: 0px;
     font-size: 12px;
-    text-align: center;
   }
 
   .contact-icon {
     font-size: 25px;
-    margin-left: 40px;
   }
 
   iframe {
@@ -97,7 +95,9 @@ iframe {
   }
 
   .contact-form {
-    margin-left: 30px;
+    margin-left: 0px;
+    width: 900px;
+    box-shadow: none;
 
   }
 }

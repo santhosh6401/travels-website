@@ -56,12 +56,15 @@
 @media screen and (max-width: 600px) {
   .profile {
     margin-top: 200px;
-    padding-left: 75px;
+    padding-left: 50px;
     color: rgb(32, 32, 32);
   }
   .image {
     margin-top: 0px;
     display: inline-block;
     animation: fadeIn 5s;
+  }
+  .text {
+    font-size: 35px;
   }
 }

@@ -43,6 +43,7 @@
 
 @media screen and (max-width: 600px) {
   .header {
+    width: 330px;
     top: 20px;
     right: 50px;
     left: 50px;
