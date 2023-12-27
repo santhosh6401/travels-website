@@ -2,7 +2,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./Services.css";
 import Card from "react-bootstrap/Card";
 import { FaTreeCity } from "react-icons/fa6";
-import { SiUber } from "react-icons/si";
 import { MdLocalAirport } from "react-icons/md";
 import { MdCorporateFare } from "react-icons/md";
 
@@ -16,7 +15,7 @@ const Services = () => {
       </p>
       <Container>
         <Row>
-          <Col md={3}>
+          <Col md={4}>
             <Card style={{ width: "18rem" }} className="service-card">
               <Card.Body>
                 <Card.Title
@@ -34,7 +33,7 @@ const Services = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={3}>
+          <Col md={4}>
             <Card style={{ width: "18rem" }} className="service-card">
               <Card.Body>
                 <Card.Title
@@ -51,7 +50,7 @@ const Services = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={3}>
+          <Col md={4}>
             <Card style={{ width: "18rem" }} className="service-card">
               <Card.Body>
                 <Card.Title
@@ -65,21 +64,6 @@ const Services = () => {
                   services offering dedicated accounts, scheduled pickups, and
                   group transportation for events. Elevate your corporate travel
                   experience with our customized solutions
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={3}>
-            <Card style={{ width: "18rem" }} className="service-card">
-              <Card.Body>
-                <Card.Title
-                  style={{ fontSize: "14px", color: "var(--color-blue)" , opacity:0.85}}
-                >
-                  <SiUber className="service-icon" /> Integrated With Uber
-                </Card.Title>
-                <Card.Text>
-                  We're seamlessly integrated with Uber, expanding your options
-                  for convenient rides
                 </Card.Text>
               </Card.Body>
             </Card>

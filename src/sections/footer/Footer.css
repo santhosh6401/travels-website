@@ -16,12 +16,14 @@
   /* border-top: 3px solid rgba(24, 24, 24, 0.1); */
 }
 
-
 @media screen and (max-width: 600px) {
- .footer{
-  text-align: center;
- }
- .icons{
-  display: none;
- }
+  .footer {
+    padding-bottom: 10px;
+    background-color: rgba(71, 70, 70, 0.05);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px); 
+  }
+  .icons {
+    display: none;
+  }
 }

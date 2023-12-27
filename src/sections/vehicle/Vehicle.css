@@ -34,13 +34,21 @@
 
 @media screen and (max-width: 600px) {
   .vehicle-image {
-    width: 300px;
+    width: 275px;
     height: 200px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
   }
 
   .vehicle-topic {
     font-size: 20px;
     margin-bottom: 50px;
+  }
+
+  .add-desc {
+    margin: auto;
+  }
+
+  .vehicle{
+    height: 100%;
   }
 }

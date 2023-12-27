@@ -44,7 +44,7 @@
   color: var(--color-white);
   width: 120px;
   padding: 12px;
-  border-radius: 10px;
+  border-radius: 20px;
   text-align: center;
   background-image: linear-gradient(var(--color-blue), #42a2f1);
   backdrop-filter: blur(4px);
@@ -56,15 +56,19 @@
 @media screen and (max-width: 600px) {
   .profile {
     margin-top: 200px;
-    padding-left: 50px;
+    padding-left: 40px;
     color: rgb(32, 32, 32);
   }
   .image {
-    margin-top: 0px;
+    margin: auto;
+    width: 80%;
     display: inline-block;
     animation: fadeIn 5s;
   }
   .text {
     font-size: 35px;
+  }
+  h6 {
+    line-height: 30px;
   }
 }

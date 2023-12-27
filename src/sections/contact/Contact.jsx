@@ -66,13 +66,13 @@ const Contact = () => {
             <p>
               <PiPhoneCallLight className="contact-icon" />
               <span className="contact-info">
-                +91 1234567890 | +91 0987654321
+                +91 7603852586 | +91 6360583903
               </span>
             </p>
             <p>
               <CiMail className="contact-icon" />
               <span className="contact-info">
-                test@gmail.com | test2@gmail.com
+                eaglesqaudtravels@gmail.com
               </span>
             </p>
             <p>

@@ -60,7 +60,7 @@ const Home = () => {
           <Col md={7} className="profile">
             <section>
               <p className="text">
-                <b>EAGLE-SQUAD</b>
+                <b>EAGLE SQUAD</b>
                 <br />
                 <h6>We make your ride comfortable and easy</h6>
               </p>
