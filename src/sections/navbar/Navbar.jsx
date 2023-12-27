@@ -4,6 +4,7 @@ import { Col, Row, Container } from "react-bootstrap";
 import "./Navbar.css";
 import { BiTrip } from "react-icons/bi";
 
+
 const Navbar = () => {
   return (
     <div>
@@ -33,10 +34,11 @@ const Navbar = () => {
             <Col md={2}></Col>
           </Row>
         </Container>
+        
       </div>
       <p className="fixed-book-mb">
-        <BiTrip />
-      </p>
+          <BiTrip />
+        </p>
     </div>
   );
 };

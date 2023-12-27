@@ -23,7 +23,12 @@
 }
 
 .booking-image {
-  margin-top: 100px;
+  margin-top: 200px;
+}
+
+.booking-dropdown {
+  width: 100%;
+  padding: 2%;
 }
 
 @media screen and (max-width: 600px) {
@@ -31,7 +36,7 @@
     padding: 25px;
   }
   .booking-image {
-    margin-top: 50px;
+    display: none;
   }
   .booking-topic {
     font-size: 20px;

@@ -16,6 +16,8 @@ const Layout = () => {
 
       <Home />
       
+      {/* <Booking/> */}
+
       <Why />
 
       <Services />

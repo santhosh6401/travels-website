@@ -52,6 +52,18 @@
   box-shadow: 1px 5px 5px rgba(18, 35, 224, 0.2);
 }
 
+.home-book:hover {
+  color: var(--color-white);
+  width: 120px;
+  padding: 12px;
+  border-radius: 20px;
+  text-align: center;
+  background-image: linear-gradient(#42a2f1,var(--color-blue));
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  box-shadow: 1px 5px 5px rgba(18, 35, 224, 0.353);
+  transition: 500ms ease-in-out;
+}
 
 @media screen and (max-width: 600px) {
   .profile {

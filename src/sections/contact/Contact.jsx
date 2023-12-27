@@ -47,6 +47,7 @@ const Contact = () => {
                     as="textarea"
                     rows={3}
                     className="contact-text"
+                    placeholder="comment"
                     required
                   />
                 </Form.Group>

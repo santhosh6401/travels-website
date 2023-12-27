@@ -1,8 +1,8 @@
 import "./Footer.css";
-import { RxInstagramLogo } from "react-icons/rx";
+import { RxInstagramLogo, RxLinkedinLogo } from "react-icons/rx";
 import { Col, Container, Row } from "react-bootstrap";
 import { ImHeart } from "react-icons/im";
-import { GoMail } from "react-icons/go";
+
 
 const Footer = () => {
   return (
@@ -15,11 +15,14 @@ const Footer = () => {
           </a>
         </Col>
         <Col md={2} xs={3} sm={1} className="text-center">
-          <a href="#" target="blank">
+        <a href="https://www.instagram.com/sandie_rep/" target="blank">
             <RxInstagramLogo className="icons" />
           </a>
-          <a href="#" target="blank">
-            <GoMail className="icons" />
+          <a
+            href="https://linkedin.com/in/santhoshkumar-s-563a59230"
+            target="blank"
+          >
+            <RxLinkedinLogo className="icons" />
           </a>
         </Col>
       </Row>

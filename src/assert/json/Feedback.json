@@ -1,27 +1,27 @@
 [
     {
       "id": 1,
-      "name": "John Doe",
-      "comment": "Great service! Will definitely use again.",
-      "rating": 5
+      "name": "Manu",
+      "comment": "Vehicle was well-maintained, and the ride was comfortable",
+      "rating": "⭐⭐⭐⭐⭐"
     },
     {
       "id": 2,
-      "name": "Jane Smith",
+      "name": "Chitra",
       "comment": "Excellent experience. Highly recommended.",
-      "rating": 4.5
+      "rating": "⭐⭐⭐⭐⭐"
     },
     {
         "id": 3,
-        "name": "John Doe",
+        "name": "Rajkumar",
         "comment": "Great service! Will definitely use again.",
-        "rating": 5
+        "rating": "⭐⭐⭐⭐"
       },
       {
         "id": 4,
-        "name": "Jane Smith",
-        "comment": "Excellent experience. Highly recommended.",
-        "rating": 4.5
+        "name": "Jeevanantham",
+        "comment": "Punctual and reliable service. Thank you for a pleasant ride",
+        "rating": "⭐⭐⭐⭐⭐"
       }
 ]
   

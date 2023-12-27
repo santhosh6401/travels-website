@@ -3,8 +3,16 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import Book from "../../assert/booking.png";
 import "./Booking.css";
+import { useState } from "react";
+import Vehicle from "./../vehicle/Vehicle";
 
 const Booking = () => {
+  const [selectedOption, setSelectedOption] = useState("option1");
+
+  const handleSelectChange = (event) => {
+    setSelectedOption(event.target.value);
+  };
+
   return (
     <>
       <p className="contact-topic">
@@ -35,6 +43,33 @@ const Booking = () => {
                     required
                   />
                 </Form.Group>
+                <br />
+                Vehicle Type <br />
+                <br />
+                <select
+                  value={selectedOption}
+                  onChange={handleSelectChange}
+                  className="booking-dropdown"
+                >
+                  <option value="option1">Ford Figo</option>
+                  <option value="option2">Maruthi Suzuki Ciaz</option>
+                  <option value="option2">Maruthi Suzuki Swift Dizer</option>
+                  <option value="option2">Toyato Platinum Etios</option>
+
+                </select>
+                <br />
+                <br />
+                Journey Type <br />
+                <br />
+                <select
+                  value={selectedOption}
+                  onChange={handleSelectChange}
+                  className="booking-dropdown"
+                >
+                  <option value="option1">One Way</option>
+                  <option value="option2">Up and Down</option>
+                </select>
+                <br />
                 <br />
                 <Form.Group controlId="form.Name">
                   <Form.Label>Drop location</Form.Label>

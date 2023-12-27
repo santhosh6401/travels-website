@@ -1,6 +1,7 @@
 import "./Testimonials.css";
 import feedbackData from "../../assert/json/Feedback.json";
 import { Container } from "react-bootstrap";
+import { IoPersonOutline } from "react-icons/io5";
 
 const Testimonials = () => {
   return (
@@ -14,7 +15,9 @@ const Testimonials = () => {
       <div className="feedback-carousel">
         {feedbackData.map((feedback) => (
           <div key={feedback.id} className="feedback-card">
-            <h4> 👤 {feedback.name}</h4>
+            <h6>
+              <IoPersonOutline /> &nbsp;{feedback.name}
+            </h6>
             <p className="feedback-desc">{feedback.comment}</p>
             <div>Rating: {feedback.rating}</div>
           </div>
