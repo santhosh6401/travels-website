@@ -1,9 +1,8 @@
-import React from "react";
 import Logo from "../../assert/logo-removebg.png";
 import { Col, Row, Container } from "react-bootstrap";
 import "./Navbar.css";
 import { BiTrip } from "react-icons/bi";
-
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -16,29 +15,40 @@ const Navbar = () => {
             </Col>
             <Col md={2}></Col>
             <Col md={1}>
-              <p className="links">Home</p>
+              <Link to="/">
+                <p className="links">Home</p>
+              </Link>
             </Col>
             <Col md={1}>
-              <p className="links">About</p>
+              <Link to="/about">
+                <p className="links">About</p>
+              </Link>
             </Col>
 
             <Col md={1}>
-              <p className="links">Service</p>
+              <Link to="/service">
+                <p className="links">Service</p>
+              </Link>
             </Col>
             <Col md={1}>
-              <p className="links">Contact</p>
+              <Link to="/contact">
+                <p className="links">Contact</p>
+              </Link>
             </Col>
             <Col md={1}>
-              <p className="book">Book Now</p>
+              <Link to="/book">
+                <p className="book">Book Now</p>
+              </Link>
             </Col>
             <Col md={2}></Col>
           </Row>
         </Container>
-        
       </div>
       <p className="fixed-book-mb">
+        <Link to="/book">
           <BiTrip />
-        </p>
+        </Link>
+      </p>
     </div>
   );
 };

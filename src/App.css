@@ -48,9 +48,7 @@
   scroll-behavior: smooth;
 }
 
-body,
-input,
-textarea {
+body {
   font-family: var(--body-font);
   font-size: var(--font-size);
   line-height: 1.6;

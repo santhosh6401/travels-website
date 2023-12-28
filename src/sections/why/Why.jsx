@@ -2,12 +2,6 @@ import "./Why.css";
 import { Col, Container, Row } from "react-bootstrap";
 import whyImg from "../../assert/services.png";
 import Card from "react-bootstrap/Card";
-import { IoMdTime } from "react-icons/io";
-import { MdOutlinePayments } from "react-icons/md";
-import { MdDriveEta } from "react-icons/md";
-import { AiOutlineSafetyCertificate } from "react-icons/ai";
-import { CiDollar } from "react-icons/ci";
-import { IoHappyOutline } from "react-icons/io5";
 
 const Why = () => {
   return (

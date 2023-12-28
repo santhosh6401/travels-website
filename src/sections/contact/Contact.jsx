@@ -1,12 +1,60 @@
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import "./Contact.css";
 import Conversation from "../../assert/conversation.png";
 import { PiPhoneCallLight } from "react-icons/pi";
 import { CiMail } from "react-icons/ci";
 import { CiLocationOn } from "react-icons/ci";
-import Form from "react-bootstrap/Form";
+import { useState } from "react";
+import configuration from "../../assert/config/Configuartion.json";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [comment, setComment] = useState("");
+  const [phoneNo, setPhoneNo] = useState("");
+  const [data, setData] = useState(" . ");
+  const API_KEY = configuration.telegramContactBotToken;
+  const CHAT_ID = configuration.telegramChatId;
+
+  const handleNotification = async (e) => {
+    e.preventDefault();
+
+    try {
+      setData(
+        `somebody want to connect with you 📞  !!! name : ${name} , email : ${email} , comment : ${comment} , phoneno : ${phoneNo}`
+      );
+      const response = await fetch(
+        `https://api.telegram.org/bot${API_KEY}/sendMessage?chat_id=${CHAT_ID}&text=${data}`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      if (response.ok) {
+        setName("");
+        setComment("");
+        setEmail("");
+        setPhoneNo("");
+        setData("");
+        alert(
+          "\n\nThank you for visiting our site ,\n\n our team will contact soon 😊 ...."
+        );
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  };
+
+  const handleClear = () => {
+    setName("");
+    setComment("");
+    setEmail("");
+    setPhoneNo("");
+    setData("");
+  };
+
   return (
     <>
       <p className="contact-topic">
@@ -20,41 +68,76 @@ const Contact = () => {
           <Col md={2}></Col>
           <Col md={4} className="contact-form">
             <Container>
-              <Form>
-                <Form.Group controlId="form.Name">
-                  <Form.Label>Name</Form.Label>
-                  <Form.Control
-                    type="text"
-                    placeholder="name"
-                    className="contact-text"
-                    required
-                  />
-                </Form.Group>
-                <br />
-                <Form.Group controlId="form.Email">
-                  <Form.Label>Email address</Form.Label>
-                  <Form.Control
-                    type="email"
-                    placeholder="name@example.com"
-                    className="contact-text"
-                    required
-                  />
-                </Form.Group>
-                <br />
-                <Form.Group controlId="form.Textarea">
-                  <Form.Label>Comment</Form.Label>
-                  <Form.Control
-                    as="textarea"
-                    rows={3}
-                    className="contact-text"
-                    placeholder="comment"
-                    required
-                  />
-                </Form.Group>
+              <form onSubmit={handleNotification}>
+                <label>Name</label>
                 <br />
                 <br />
-                <Button className="contact-form-button">Submit</Button>
-              </Form>
+                <input
+                  type="text"
+                  placeholder="name"
+                  className="contact-text"
+                  onChange={(e) => setName(e.target.value)}
+                  value={name}
+                  required
+                />
+                <br />
+                <br />
+                <label>Email address</label>
+                <br />
+                <br />
+                <input
+                  type="email"
+                  placeholder="name@example.com"
+                  className="contact-text"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+
+                />
+                <br />
+                <br />
+                <label>Phone Number</label>
+                <br />
+                <br />
+                <input
+                  type="tel"
+                  placeholder="9876543210"
+                  className="contact-text"
+                  value={phoneNo}
+                  onChange={(e) => setPhoneNo(e.target.value)}
+                  required
+
+                />
+                <br />
+                <br />
+                <label>Comment</label>
+                <br />
+                <br />
+                <textarea
+                  as="textarea"
+                  rows={3}
+                  className="contact-text"
+                  placeholder="comment"
+                  value={comment}
+                  onChange={(e) => setComment(e.target.value)}
+                  required
+
+                />
+                <br />
+                <br />
+                <button className="contact-form-button" type="submit">
+                  Submit
+                </button>
+                &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                &nbsp;
+                <button
+                  className="contact-form-button"
+                  type="button"
+                  onClick={handleClear}
+                >
+                  Clear
+                </button>
+              </form>
             </Container>
           </Col>
           <Col md={1}></Col>
@@ -72,9 +155,7 @@ const Contact = () => {
             </p>
             <p>
               <CiMail className="contact-icon" />
-              <span className="contact-info">
-                eaglesqaudtravels@gmail.com
-              </span>
+              <span className="contact-info">eaglesqaud633@gmail.com</span>
             </p>
             <p>
               <CiLocationOn className="contact-icon" />

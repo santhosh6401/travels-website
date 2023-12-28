@@ -23,7 +23,7 @@
 }
 
 .booking-image {
-  margin-top: 200px;
+  margin-top: 350px;
 }
 
 .booking-dropdown {
@@ -40,5 +40,7 @@
   }
   .booking-topic {
     font-size: 20px;
+    margin-top: 150px;
+    margin-bottom: 50px;
   }
 }

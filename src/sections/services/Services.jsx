@@ -19,7 +19,11 @@ const Services = () => {
             <Card style={{ width: "18rem" }} className="service-card">
               <Card.Body>
                 <Card.Title
-                  style={{ fontSize: "14px", color: "var(--color-blue)"  , opacity:0.85 }}
+                  style={{
+                    fontSize: "14px",
+                    color: "var(--color-blue)",
+                    opacity: 0.85,
+                  }}
                 >
                   <FaTreeCity className="service-icon" /> City-Wide
                   Transportation
@@ -37,9 +41,13 @@ const Services = () => {
             <Card style={{ width: "18rem" }} className="service-card">
               <Card.Body>
                 <Card.Title
-                  style={{ fontSize: "14px", color: "var(--color-blue)" , opacity:0.85 }}
+                  style={{
+                    fontSize: "14px",
+                    color: "var(--color-blue)",
+                    opacity: 0.85,
+                  }}
                 >
-                  <MdLocalAirport className="service-icon" /> Airport Transfers
+                  <MdLocalAirport className="service-icon" /> Airport Transport
                 </Card.Title>
                 <Card.Text>
                   Travel stress-free to and from the airport with our seamless
@@ -54,16 +62,22 @@ const Services = () => {
             <Card style={{ width: "18rem" }} className="service-card">
               <Card.Body>
                 <Card.Title
-                  style={{ fontSize: "14px", color: "var(--color-blue)"  , opacity:0.85}}
+                  style={{
+                    fontSize: "14px",
+                    color: "var(--color-blue)",
+                    opacity: 0.85,
+                  }}
                 >
-                  <MdCorporateFare className="service-icon" /> Corporate
-                  Services
+                  <MdCorporateFare className="service-icon" /> One-Way & Two Way
                 </Card.Title>
                 <Card.Text>
-                  Tailored for businesses! Explore our specialized corporate
-                  services offering dedicated accounts, scheduled pickups, and
-                  group transportation for events. Elevate your corporate travel
-                  experience with our customized solutions
+                  Our one-way service offers direct transport from your location
+                  to your destination, ensuring convenience without immediate
+                  return planning.
+                  <br />
+                  <br/>
+                  Experience hassle-free round-trip transportation with our
+                  reliable taxis, providing both outbound and return journeys.
                 </Card.Text>
               </Card.Body>
             </Card>

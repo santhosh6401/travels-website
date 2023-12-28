@@ -44,7 +44,7 @@ iframe {
 }
 
 .contact-form {
-  padding: 75px 25px 75px 25px;
+  padding: 50px 25px 75px 25px;
   font-size: 13px;
   background-color: rgba(24, 24, 24, 0.03);
   border-radius: 5px;
@@ -54,10 +54,27 @@ iframe {
 .contact-form-button {
   width: 150px;
   text-align: center;
+  padding: 10px;
+  background-color: var(--color-blue);
+  color: white;
+  border-radius: 5px;
 }
 
 .contact-text {
   font-size: 12px;
+}
+
+
+input,
+textarea {
+  font-family: var(--body-font);
+  font-size: var(--font-size);
+  line-height: 1.6;
+  color: var(--color-grey);
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 0.25px  solid var(--color-secondary);
 }
 
 @media screen and (max-width: 600px) {
