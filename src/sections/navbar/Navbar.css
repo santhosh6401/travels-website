@@ -67,6 +67,7 @@
     left: 15px;
     z-index: 1000;
     position: fixed;
+    text-align: center;
   }
   .links {
     display: none;

@@ -5,6 +5,7 @@ import Car from "../../assert/friendly.png";
 import Management from "../../assert/management.png";
 import Support from "../../assert/support.png";
 import Carousel from "react-bootstrap/Carousel";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -69,7 +70,9 @@ const Home = () => {
               <span className="rotate-text">{text}</span>
               <br />
               <br />
-              <p className="home-book">Book Now</p>
+              <Link to="/book">
+                <p className="home-book">Book Now</p>
+              </Link>
             </section>
           </Col>
           <Col md={4} className="image">
